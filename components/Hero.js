@@ -8,20 +8,13 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="w-32 h-32 mx-auto mb-8 rounded-full bg-gray-200 dark:bg-gray-700"
-        />
-        {/* <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
           className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-gray-300 dark:border-gray-600"
         >
-        <img
-          src="../assets/heroimage.jpeg" // Change to your actual image path
-          alt="Profile"
-          className="w-full h-full object-cover"
-        />
-        </motion.div> */}
+          <img
+            src="/heroimage.jpeg"
+            alt="Profile"
+          />
+        </motion.div>
         <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
           Frontend Developer
         </h1>
@@ -32,9 +25,13 @@ export default function Hero() {
           <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
             View Projects
           </button>
-          <button className="border-2 border-blue-600 text-blue-600 dark:text-blue-400 px-6 py-3 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-800 transition">
+          <a
+            href="/KaviarasuResume.docx"
+            download="KaviarasuResume.docx"
+            className="border-2 border-blue-600 text-blue-600 dark:text-blue-400 px-6 py-3 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-800 transition"
+          >
             Download CV
-          </button>
+          </a>
         </div>
       </div>
     </section>
