@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <h1 className="text-2xl font-bold text-gray-800 dark:text-white">
-            Kavi Arasu
+            Kaviyarasu
           </h1>
           <button
             onClick={toggleTheme}
